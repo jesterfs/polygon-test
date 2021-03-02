@@ -1,36 +1,37 @@
 <template>
-  <div class="hello">
-    <h1>Discover your difference, harness your strengths.</h1>
-    <p>Tele-assessments and support for learning differences.</p>
-    <button>
-        <router-link to="/about">Get Started</router-link>
-      </button>
-  </div>
+  <v-container>
+    <v-row class="text-center">
+
+      <v-col class="mb-4">
+        <h1 class="display-1 font-weight-bold mb-6">
+          Discover your difference, harness your strengths.
+        </h1>
+        <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
+        <p class="subheading font-weight-regular">
+          Tele-assessments and support for learning differences.
+        </p>
+      </v-col>
+
+      <v-col
+        class="mb-5"
+        cols="12"
+      >
+        <router-link class='button-link' to="/about"><v-btn>Get Started</v-btn></router-link>
+       
+      </v-col>
+
+      
+    </v-row>
+  </v-container>
 </template>
 
+<script>
+  
+</script>
 
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
-
-button {
-  background-color: black;
-  color: white;
-  padding: 5px;
-}
+<style>
+  .button-link {
+    text-decoration: none;
+  }
 </style>
