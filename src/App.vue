@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <v-col cols="12">
         <router-link to="/">
           <v-img
@@ -12,23 +12,36 @@
     </v-col>
     
     <v-main>
-      <router-view></router-view>
+      <div class="comps">
+        <router-view></router-view>
+      </div>
+      <div class="comps">
+        <Footer />
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld';
+import Footer from './components/Footer.vue';
 
-// export default {
-//   name: 'App',
+export default {
+  name: 'App',
 
-//   components: {
-//     HelloWorld,
-//   },
+  components: {
+    Footer,
+  },
 
-//   data: () => ({
-//     //
-//   }),
-// };
+  data: () => ({
+    //
+  }),
+};
 </script>
+
+<style> 
+  .comps {
+    position: static;
+  }
+
+  
+</style>

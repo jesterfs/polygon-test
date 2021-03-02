@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="body">
     <v-row class="text-center">
 
       <v-col class="mb-4">
@@ -30,7 +30,10 @@
   
 </script>
 
-<style>
+<style scoped>
+  .body {
+    margin-bottom: 100px;
+  }
   .button-link {
     text-decoration: none;
     color: white;

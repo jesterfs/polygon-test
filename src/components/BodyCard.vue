@@ -1,6 +1,10 @@
 <template>
-
+    <div class="bigwrap">
+    <div class="circle">
+        
+    </div>
       <div class="body">
+        
         <v-container class="curve" >
             <v-row class="text-center">
 
@@ -85,15 +89,27 @@
             </v-row>
         </v-container>
     </div>
-  
+  </div>
 </template>
 
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style >
+<style scoped>
+.bigwrap {
+    margin-top: 20px;
+}
 .body {
-    margin-top: 50px
+    margin-top: -50px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    position: relative;
+    top: 0px;
 }
 h2 {
     font-size: 20px;
@@ -145,6 +161,8 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    top: -50px;
 }
 
 .box {
@@ -190,7 +208,7 @@ button {
 }
 
 .bodybox {
-    width: 50%;
+    width: 100%;
 }
 
 
@@ -201,6 +219,9 @@ button {
         }
         .box {
             width: 30%;
+        }
+        .bodybox {
+            width: 50%;
         }
     }
 
