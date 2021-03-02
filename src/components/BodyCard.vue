@@ -1,10 +1,11 @@
 <template>
-  <div class="body">
+
+      <div class="body">
         <v-container class="curve" >
             <v-row class="text-center">
 
                 <v-row class="cardboxes align-center mb-4 ">
-                    <v-card class="box "> 
+                    <v-card class="box rounded-xl" outlined elevation="5"> 
                         <v-container class="servicehead">
                             <h2>Learning differences assessment</h2>
                         </v-container>
@@ -22,7 +23,7 @@
                             <v-list-item>Optional giftedness report (+$95)</v-list-item>
                         </v-container>
                     </v-card>
-                    <v-card class="box"> 
+                    <v-card class="box rounded-xl" outlined elevation="5"> 
                         <v-container class="servicehead">
                             <h2>Attention differences assessment</h2>
                         </v-container>
@@ -39,7 +40,7 @@
                             
                         </v-container>
                     </v-card>
-                    <v-card class="box"> 
+                    <v-card class="box rounded-xl" outlined elevation="5"> 
                         <v-container class="servicehead">
                             <h2>Follow-up support</h2>
                         </v-container>
@@ -69,7 +70,7 @@
                     <p class="body-text body-p">As soon as you suspect a learning or attention difference, you should consider an assessment. Interventions are most successful when learning differences are diagnosed early in life. Still, an evaluation at any age can be an important step toward receiving proper support.</p>  
 
                     </v-container>
-                    <router-link class='button-link' to="/about"><v-btn>Get Started</v-btn></router-link>
+                    <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
                 
                 </v-col>   
 
@@ -82,14 +83,18 @@
                     />
                 </v-col>
             </v-row>
-  </v-container>
-  </div>
+        </v-container>
+    </div>
+  
 </template>
 
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style >
+.body {
+    margin-top: 50px
+}
 h2 {
     font-size: 20px;
 }
@@ -115,19 +120,22 @@ button {
   padding: 5px;
 }
 
+.wrapper {
+    width: 50%;
+    overflow: hidden
+}
 .body {
     background-color: black;
-    position: relative;
-    /* width: 2000px; */
-    overflow: visible;
-    /* border-radius: 50% 50% 0 0; */
-    border-width: 1px 0 0 1px;
+    position: absolute; 
+    width: 100%;
+    /* padding-left: 15px; */
+  
+    /* transition: border-top-left-radius 1s ease-in; */
+    /* border-radius: 40% 40% 0 0; */
+    
 }
 
-/* .curve {
-    border-radius: 100% 100% 0 0; 
-    height: 120%;
-} */
+
 
 .cardboxes {
     /* max-width: 50%; */
@@ -143,6 +151,7 @@ button {
     width: 80%;
     height: 400px;
     margin-bottom: 20px;
+    
 }
 
 .servicehead {
