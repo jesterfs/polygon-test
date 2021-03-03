@@ -39,9 +39,12 @@ export default {
 </script>
 
 <style> 
-  
+  h2 p h3 h1 {
+    font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  }
   .v-main__wrap {
     height: auto;
+    
   }
 
   body {

@@ -16,7 +16,7 @@
     
 
     <v-btn class=" btn mt-5 white--text" color="#0056ce" @click.prevent="next()">Continue</v-btn>
-    
+    <p class="pagenumber"><strong>1</strong>/3</p>
   </div>
 
   <div v-if="step === 2">
@@ -42,6 +42,7 @@
 
    
     <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="next2()">Continue</v-btn>
+    <p class="pagenumber"><strong>2</strong>/3</p>
     </div>
   </div>
 
@@ -128,7 +129,7 @@
     
     
     <v-btn  class="mt-5 white--text btn" color="#0056ce" @click.prevent="submit()">Submit</v-btn>
-    
+    <p class="pagenumber"><strong>3</strong>/3</p>
   </div>
   <div  v-if="step === 4">
     <h1>Thank You!</h1>
@@ -263,6 +264,11 @@ export default {
   .errorMsg {
     color: red;
     font-weight: heavy;
+  }
+
+  .pagenumber {
+    margin-top: 20px;
+    font-size: 30px;
   }
 
   @media only screen and (min-width: 800px) {
