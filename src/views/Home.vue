@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <HelloWorld />
+    <Greeting />
     <BodyCard />
     <HowItWorks />
     <Footer />
@@ -10,7 +9,7 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Greeting from '@/components/Greeting.vue'
 import BodyCard from '@/components/BodyCard.vue'
 import HowItWorks from '@/components/HowItWorks.vue'
 import Footer from '@/components/Footer.vue'
@@ -18,7 +17,7 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    Greeting,
     BodyCard,
     HowItWorks,
     Footer

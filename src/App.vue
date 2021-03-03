@@ -11,30 +11,22 @@
             alt="Polygon Logo"
           />
         </router-link>
-    </v-col>
-    
+    </v-col>    
     <v-main>
       <div class="comps">
         <router-view></router-view>
       </div>
-      <!-- <Footer /> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-// import Footer from './components/Footer.vue';
+
 
 export default {
   name: 'App',
-
   components: {
-    // Footer,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>
 
@@ -43,16 +35,12 @@ export default {
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
   }
   .v-main__wrap {
-    height: auto;
-    
+    height: auto;    
   }
-
   body {
     height: 100%;
   }
-
   .polygon {
     display: none;
-  }
-  
+  }  
 </style>

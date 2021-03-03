@@ -1,7 +1,6 @@
 <template>
   <v-container class="body">
     <v-row class="text-center">
-
       <v-col class="mb-4">
         <h1 class="display-1 font-weight-bold mb-6">
           Discover your difference, harness your strengths.
@@ -12,16 +11,12 @@
           Tele-assessments and support for learning differences.
         </p>
       </v-col>
-
       <v-col
         class="mb-5"
         cols="12"
       >
-        <router-link class='button-link' to="/about"><v-btn class="white--text heavy--text" color="#0056ce">Get Started</v-btn></router-link>
-       
-      </v-col>
-
-      
+        <router-link class='button-link' to="/assessment"><v-btn class="white--text heavy--text" color="#0056ce">Get Started</v-btn></router-link>
+      </v-col>      
     </v-row>
   </v-container>
 </template>
@@ -32,13 +27,12 @@
 
 <style scoped>
   .body {
-    margin-bottom: 100px;
+    margin-bottom: 125px;
   }
   .button-link {
     text-decoration: none;
     color: white;
   }
-
   .thatbtn {
     color: white;
   }
