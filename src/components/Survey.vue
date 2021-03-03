@@ -23,7 +23,8 @@
     
     <div class="radios">
     <legend for="who"><h1>Who is this assessment for?</h1></legend>
-    <v-radio-group v-model="radioGroup">
+    <p class="errorMsg"  v-if="error"> Please answer all of the questions </p>
+    <v-radio-group name="who" id="who" v-model="who">
       <v-radio
         label="Myself"
         value="myself">
@@ -40,20 +41,21 @@
     
 
    
-    <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="next()">Continue</v-btn>
+    <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="next2()">Continue</v-btn>
     </div>
   </div>
 
   <div  v-if="step === 3">
     <h1>How can we contact you?</h1>
+    <p class="errorMsg"  v-if="error"> Please answer all of the questions </p>
     <div class="form-frame">
       <div class="regis">
         <label class="label" for="name">Fullname</label>
-        <input class="input" id="name" name="name" type="text" placeholder="Fullname" required><br> 
+        <input class="input" id="name" name="name" v-model="name" type="text" placeholder="Fullname" required><br> 
       </div>
       <div class="regis">
         <label class="label" for="state">State</label>
-        <select class="input" name="state" id="state"  required>
+        <select class="input" v-model="state" name="state" id="state"  required>
           <option class="placeholder" value="" selected disabled hidden>State</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -110,12 +112,12 @@
       </div>
       <div class="regis">
         <label class="label" for="email">Email</label>
-        <input class="input" id="email" name="email" type="email" placeholder="Email" required><br> 
+        <input class="input" v-model="email" id="email" name="email" type="email" placeholder="Email" required><br> 
       </div>
       <div class="regis">
         <label class="label" for="phone" placeholder="Phone">Phone:</label>
 
-        <input class="input" type="tel" id="phone" name="phone" placeholder="Phone"
+        <input class="input" v-model="phone" type="tel" id="phone" name="phone" placeholder="Phone"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required> <br>
       </div>
@@ -124,8 +126,8 @@
     
     
     
-
-    <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="submit()">Submit</v-btn>
+    
+    <v-btn  class="mt-5 white--text btn" color="#0056ce" @click.prevent="submit()">Submit</v-btn>
     
   </div>
   <div  v-if="step === 4">
@@ -138,7 +140,7 @@
                           contain
                           alt="four polygon characters un the shape of a rocket"
                       />
-
+    
   </div>
   </v-form>
 
@@ -155,6 +157,7 @@ export default {
   data() {
     return {
       step:1,
+      error: false
       
     }
   },  
@@ -162,7 +165,21 @@ export default {
     next() {
       this.step++;
     },
+    next2() {
+      if (!this.who) {
+        this.error = true;
+      } else {
+        this.error = false;
+        this.step++;
+      }
+      
+    },
     submit() {
+      
+      if (!this.name || !this.email || !this.state || !this.phone) {
+        this.error = true;
+      } else {
+      this.error = false;
       this.step++;
       let answers = {
         for: this.who,
@@ -172,7 +189,7 @@ export default {
         phone: this.phone
       }; 
       this.$emit(answers);
-      
+      }
     }
   }
 }
@@ -241,6 +258,11 @@ export default {
 
   .button-link {
     margin-top: 30px;
+  }
+
+  .errorMsg {
+    color: red;
+    font-weight: heavy;
   }
 
   @media only screen and (min-width: 800px) {
