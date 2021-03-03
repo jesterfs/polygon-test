@@ -36,7 +36,6 @@ export default {
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
   }
   .header {
-    background-color: lightgray;
     max-height: 200px;
   }
   .v-main__wrap {
