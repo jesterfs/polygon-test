@@ -1,6 +1,8 @@
 <template>
   <v-app class="app">
-    <!-- <v-col cols="12">
+    
+    <v-main>
+      <v-col class="header" cols="12">
         <router-link to="/">
           <h1 class="polygon">Polygon</h1>
           <v-img
@@ -11,8 +13,7 @@
             alt="Polygon Logo"
           />
         </router-link>
-    </v-col>     -->
-    <v-main>
+      </v-col>    
       <div class="comps">
         <router-view></router-view>
       </div>
@@ -33,6 +34,10 @@ export default {
 <style> 
   h2 p h3 h1 {
     font-family: Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;
+  }
+  .header {
+    background-color: lightgray;
+    max-height: 200px;
   }
   .v-main__wrap {
     height: auto;    
