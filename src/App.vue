@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <v-col cols="12">
+    <!-- <v-col cols="12">
         <router-link to="/">
           <h1 class="polygon">Polygon</h1>
           <v-img
@@ -11,7 +11,7 @@
             alt="Polygon Logo"
           />
         </router-link>
-    </v-col>    
+    </v-col>     -->
     <v-main>
       <div class="comps">
         <router-view></router-view>
