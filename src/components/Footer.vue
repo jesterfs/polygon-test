@@ -21,6 +21,7 @@
                         :src="require('../assets/footerfella.png')"
                         class=" footerimg"
                         contain
+                        alt="smiling triangle character standing on pile of books"
                         
                     />
   </div>
@@ -38,7 +39,7 @@
     
     /* position: static; */
     position: relative;
-    top: 2150px;
+    top: 2350px;
     background-color: black;
     color: white;
     width: 100%;

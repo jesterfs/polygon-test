@@ -2,11 +2,13 @@
   <v-app class="app">
     <v-col cols="12">
         <router-link to="/">
+          <h1 class="polygon">Polygon</h1>
           <v-img
             :src="require('./assets/polygon.png')"
             class="my-3"
             contain
             height="150"
+            alt="Polygon Logo"
           />
         </router-link>
     </v-col>
@@ -44,6 +46,10 @@ export default {
 
   body {
     height: 100%;
+  }
+
+  .polygon {
+    display: none;
   }
   
 </style>

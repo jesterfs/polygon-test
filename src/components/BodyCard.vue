@@ -74,7 +74,7 @@
                     <p class="body-text body-p">As soon as you suspect a learning or attention difference, you should consider an assessment. Interventions are most successful when learning differences are diagnosed early in life. Still, an evaluation at any age can be an important step toward receiving proper support.</p>  
 
                     </v-container>
-                    <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
+                    <router-link class='button-link' to="/about"><v-btn class="white--text" color="#0056ce">Get Started</v-btn></router-link>
                 
                 </v-col>   
 
@@ -84,6 +84,7 @@
                         class="my-3"
                         contain
                         height="300"
+                        alt="Smiling hexagon creature surrounded by a speech bubble, piece of paper, camera, and calendar"
                     />
                 </v-col>
             </v-row>

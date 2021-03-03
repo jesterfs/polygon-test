@@ -43,9 +43,9 @@
                         :src="require('../assets/fourfriends.png')"
                         class="my-3 img"
                         contain
-                        
+                        alt="Four smiling polygon characters standing in a human pyramid"
                     />
-        <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
+        <router-link class='button-link' to="/about"><v-btn class="white--text" color="#0056ce">Get Started</v-btn></router-link>
     </div>
 </template>
 

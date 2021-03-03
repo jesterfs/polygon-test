@@ -15,7 +15,7 @@
     <v-card class="survey-card"><h2 class="card-text">Let's get you started with a free assessment</h2></v-card>
     
 
-    <v-btn class=" btn mt-5 white--text" color="#4E86D9" @click.prevent="next()">Continue</v-btn>
+    <v-btn class=" btn mt-5 white--text" color="#0056ce" @click.prevent="next()">Continue</v-btn>
     
   </div>
 
@@ -40,7 +40,7 @@
     
 
    
-    <v-btn class="mt-5 white--text btn" color="#4E86D9" @click.prevent="next()">Continue</v-btn>
+    <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="next()">Continue</v-btn>
     </div>
   </div>
 
@@ -125,18 +125,18 @@
     
     
 
-    <v-btn class="mt-5 white--text btn" color="#4E86D9" @click.prevent="submit()">Submit</v-btn>
+    <v-btn class="mt-5 white--text btn" color="#0056ce" @click.prevent="submit()">Submit</v-btn>
     
   </div>
   <div  v-if="step === 4">
     <h1>Thank You!</h1>
     <h2>We'll be in touch soon</h2>
-    <router-link class='button-link' to="/"><v-btn class="white--text button-link" color="#4E86D9">Home</v-btn></router-link>
+    <router-link class='button-link' to="/"><v-btn class="white--text button-link" color="#0056ce">Home</v-btn></router-link>
     <v-img 
                           :src="require('../assets/rocket.png')"
                           class=" img"
                           contain
-                          
+                          alt="four polygon characters un the shape of a rocket"
                       />
 
   </div>

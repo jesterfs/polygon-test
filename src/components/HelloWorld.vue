@@ -17,7 +17,7 @@
         class="mb-5"
         cols="12"
       >
-        <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
+        <router-link class='button-link' to="/about"><v-btn class="white--text heavy--text" color="#0056ce">Get Started</v-btn></router-link>
        
       </v-col>
 

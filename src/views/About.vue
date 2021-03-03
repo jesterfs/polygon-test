@@ -8,7 +8,7 @@
                           :src="require('../assets/lookright.png')"
                           class="my-3 img"
                           contain
-                          
+                          alt="Smiling pentagon character"
                       />
           </div>
           <Survey />
@@ -17,7 +17,7 @@
                           :src="require('../assets/lookleft.png')"
                           class="my-3 img"
                           contain
-                          
+                          alt="Smiling triangle character"
                       />
           </div>
       </v-row>
