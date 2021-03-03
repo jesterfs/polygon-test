@@ -1,24 +1,17 @@
-# polygon
+# Polygon Test Build
 
-## Project setup
-```
-npm install
-```
+by Stewart Jester
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Live App
+https://jester-polygon-test.netlify.app/#/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Repository
+https://github.com/jesterfs/polygon-test
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Description 
+A landing page and simple assessment survey for the Polygon company.
+Any of the "Get Started" buttons will take you to the survey.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Technology
+Vue.js, Vuetify
+
