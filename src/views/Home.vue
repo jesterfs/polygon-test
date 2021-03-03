@@ -4,6 +4,7 @@
     <HelloWorld />
     <BodyCard />
     <HowItWorks />
+    <Footer />
   </div>
 </template>
 
@@ -12,13 +13,15 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import BodyCard from '@/components/BodyCard.vue'
 import HowItWorks from '@/components/HowItWorks.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     HelloWorld,
     BodyCard,
-    HowItWorks
+    HowItWorks,
+    Footer
   }
 }
 </script>

@@ -15,21 +15,19 @@
       <div class="comps">
         <router-view></router-view>
       </div>
-      <div class="comps">
-        <Footer />
-      </div>
+      <!-- <Footer /> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Footer from './components/Footer.vue';
+// import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
 
   components: {
-    Footer,
+    // Footer,
   },
 
   data: () => ({
@@ -39,9 +37,13 @@ export default {
 </script>
 
 <style> 
-  .comps {
-    position: static;
+  
+  .v-main__wrap {
+    height: auto;
   }
 
+  body {
+    height: 100%;
+  }
   
 </style>

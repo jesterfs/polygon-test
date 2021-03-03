@@ -36,14 +36,16 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
             </v-expansion-panels>
-            <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
+        
         </v-container>
+        
         <v-img 
                         :src="require('../assets/fourfriends.png')"
                         class="my-3 img"
                         contain
                         
                     />
+        <router-link class='button-link' to="/about"><v-btn class="white--text" color="#4E86D9">Get Started</v-btn></router-link>
     </div>
 </template>
 
@@ -79,7 +81,7 @@ h2 {
 }
 
 .button-link {
-    top: 30px;
+    top: -400px;
     position: relative;
 }
 
