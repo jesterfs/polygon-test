@@ -2,7 +2,7 @@
     <div class="body">
         <v-row class="footer">
             <div>
-                <p>Copyright © 2021 Polygon Technologies, Inc.</p>
+                <p>Copyright © 2021 Doyglon Technologies, Inc.</p>
             </div>
             <div>
                 <p>contact@hellopolygon.com
