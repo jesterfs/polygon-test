@@ -5,7 +5,7 @@
                 <p>Copyright © 2021 Doyglon Technologies, Inc.</p>
             </div>
             <div>
-                <p>contact@hellopolygon.com
+                <p>fakeemail@doyglon.com
                     <v-icon
                     small
                     color="white"
