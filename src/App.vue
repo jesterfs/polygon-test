@@ -6,7 +6,7 @@
         <router-link to="/">
           <h1 class="polygon">Polygon</h1>
           <v-img
-            :src="require('./assets/polygon.png')"
+            :src="require('./assets/polygon-1.png')"
             class="my-3"
             contain
             height="150"
