@@ -1,5 +1,5 @@
 <template>
-  <v-container class="body">
+  <v-container sytle="background-color: #DAB6FC" class="body">
     <v-row class="text-center">
       <v-col class="mb-4">
         <h1 class="display-1 font-weight-bold mb-6">
