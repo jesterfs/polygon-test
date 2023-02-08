@@ -65,7 +65,7 @@
                     >
                         <v-container class="bodybox">
                         <h2 class="body-text body-head">Who's it for?</h2>  
-                        <h3 class="body-text">An assessment with a Polygon psychologist is appropriate for anyone age 8 or older.</h3>  
+                        <h3 class="body-text">An assessment with a Doygolon psychologist is appropriate for anyone age 8 or older.</h3>  
                         <p class="body-text body-p">As soon as you suspect a learning or attention difference, you should consider an assessment. Interventions are most successful when learning differences are diagnosed early in life. Still, an evaluation at any age can be an important step toward receiving proper support.</p>  
 
                         </v-container>
